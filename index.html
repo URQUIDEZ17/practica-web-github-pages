@@ -1,111 +1,85 @@
 <!DOCTYPE html>
-<html lang=&quot;es&quot;>
+<html lang="es">
 <head>
-<meta charset=&quot;UTF-8&quot;>
-<meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;>
-<title>Mi Página en GitHub Pages</title>
-<style>
-body {
-margin: 0;
-padding: 0;
-font-family: &quot;Segoe UI&quot;, Arial, sans-serif;
-background: linear-gradient(135deg, #7ec8e3, #e8a0c7);
-color: #333;
-}
-header {
-text-align: center;
-padding: 60px 20px;
-}
-h1 {
-font-size: 3rem;
-margin-bottom: 10px;
-color: white;
-text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-}
-p.subtitle {
-font-size: 1.2rem;
-color: #fdfdfd;
-max-width: 600px;
-margin: 0 auto;
-}
-.container {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Menú</title>
 
-Prácticas gestión de archivos en la nube
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
 
-max-width: 900px;
-margin: 40px auto;
-padding: 20px;
-}
-.card {
-background: white;
-border-radius: 12px;
-padding: 25px;
-margin-bottom: 20px;
-box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-.card h2 {
-margin-top: 0;
-color: #444;
-}
-.btn {
-display: inline-block;
-background: #ff6fa8;
-color: white;
-padding: 12px 25px;
-border-radius: 8px;
-text-decoration: none;
-font-weight: bold;
-transition: 0.3s;
-}
-.btn:hover {
-background: #ff4f90;
-}
-footer {
-text-align: center;
-padding: 20px;
-margin-top: 40px;
-color: white;
-font-size: 0.9rem;
-text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-}
-</style>
+        /* Estilos del menú */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 8px 15px;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        /* Estilos del contenido */
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-<header>
-<h1>Bienvenidos a mi Página Web</h1>
 
-Prácticas gestión de archivos en la nube
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
 
-<p class=&quot;subtitle&quot;>Esta es una versión más elaborada y bonita creada para mi práctica
-de despliegue en GitHub Pages.</p>
-</header>
-<div class=&quot;container&quot;>
-<div class=&quot;card&quot;>
-<h2>�� ¿Qué es esta página?</h2>
-<p>Esta página fue desplegada utilizando <b>GitHub Pages</b>, un servicio gratuito
-que permite publicar sitios web estáticos directamente desde un repositorio en
-GitHub.</p>
-</div>
-<div class=&quot;card&quot;>
-<h2>✨ Características</h2>
-<ul>
-<li>Diseño moderno con fondo degradado</li>
-<li>Tarjetas con sombras</li>
-<li>Botones interactivos</li>
-<li>Totalmente responsiva (se adapta a celular)</li>
-</ul>
-</div>
-<div class=&quot;card&quot;>
-<h2>�� Enlace al Repositorio</h2>
-<p>Puedes ver el código fuente directamente en mi repositorio de GitHub:</p>
-<a class=&quot;btn&quot; href=&quot;https://github.com/lidia-perez/practica-web-github-pages&quot;
-target=&quot;_blank&quot;>
-Ver en GitHub
-</a>
-</div>
-</div>
-<footer>
-© 2025 - Creado por Lidia como práctica de despliegue web
-</footer>
+    <!-- SECCIONES -->
+    <section id="inicio">
+        <h1>Bienvenido a mi página</h1>
+        <p>Esta es la sección de inicio.</p>
+    </section>
+
+    <section id="servicios">
+        <h1>Servicios</h1>
+        <p>Aquí puedes describir tus servicios.</p>
+    </section>
+
+    <section id="contacto">
+        <h1>Contacto</h1>
+        <p>Información de contacto o formulario.</p>
+    </section>
+
 </body>
 </html>
